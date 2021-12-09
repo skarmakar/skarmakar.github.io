@@ -7,9 +7,9 @@ description: >-
 lang: en-US
 timezone:  India
 repo: https://github.com/skarmakar/skarmakar.github.io # site repo [optional]
-google_verify:      XXX # Put your Google Verification here
-google_analytics:   UA-XXXXXXXX-00 # Put your Google Analytics code
-discus-identifier:  XXX
+#google_verify:      XXX # Put your Google Verification here
+#google_analytics:   UA-XXXXXXXX-00 # Put your Google Analytics code
+#discus-identifier:  XXX
 
 # Author settings
 author:
