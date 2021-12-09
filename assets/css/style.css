@@ -187,7 +187,7 @@ pre{font-size: 14px; max-width: 90vw; overflow: auto;}
     line-height: 22px;
     left: 1px;
   }
-  h1{font-size: 1.5rem;}
+  h1 {font-size: 1.5rem;}
   .profile-image{width: 96px; height: 96px;}
 }
 
@@ -198,3 +198,55 @@ pre{font-size: 14px; max-width: 90vw; overflow: auto;}
 .mode.active:after {content: "🌛";transform: translateX(20px);}
 .mode.active span {transform: translateX(0);}
 .mode span {position: absolute;z-index: 1;margin: 2px;display: block;width: 18px;height: 18px;background: white;border-radius: 50%;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);transform: translateX(20px);transition: all 0.4s ease;}
+
+
+/* custom style for about me page*/
+
+#about-me {
+  color: #545E6C;
+}
+
+#about-me h3 {
+  color: #035d74;
+}
+
+#about-me h3 small {
+  font-weight: normal;
+}
+
+#about-me .work-exp strong {
+  display: block;
+}
+
+#about-me .skills-section {
+  margin-bottom: 20px;
+}
+
+#about-me .item {
+  margin-bottom: 10px;
+}
+
+#about-me .skills-section .level-title {
+  display: inline-block;
+  width: 25%;
+  font-weight: bolder;
+}
+
+#about-me .skills-section .level-bar {
+  width: 74%;
+  display: inline-block;
+  background-color: #eee;
+  height: 10px;
+}
+
+#about-me .skills-section .level-bar-inner{
+  background-color: #90ceb9;
+  height: 10px;
+}
+
+#about-me .external-link {
+  height: 14px;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 5px;
+}

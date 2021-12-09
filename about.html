@@ -1,75 +1,169 @@
 ---
 layout: page
 title: "About Me"
+skills:
+-
+  name: Ruby
+  percentage: 80
+-
+  name: Ruby on Rails
+  percentage: 80
+-
+  name: TDD, BDD using RSpec
+  percentage: 80
+-
+  name: Javascript, jQuery
+  percentage: 80
+-
+  name: PostgreSQL
+  percentage: 80
+-
+  name: MySQL
+  percentage: 80
+-
+  name: Oracle
+  percentage: 80
+-
+  name: HTML
+  percentage: 80
+-
+  name: CSS/SCSS
+  percentage: 75
+-
+  name: Heroku
+  percentage: 75
+-
+  name: ES5/ES6
+  percentage: 65
+-
+  name: AWS
+  percentage: 50
+-
+  name: React
+  percentage: 50
+-
+  name: Golang
+  percentage: 10
+-
+  name: Typescript
+  percentage: 10
+-
+  name: Node.js
+  percentage: 10
+
+experiences:
+-
+  position: Consultant
+  duration: Sept 2021 - Present
+  company: Continental and other couple of clients
+  desc: Working on multiple projects for multiple clients as Consultant.
+-
+  position: Lead Software Developer
+  duration: April 2021 - Aug 2021
+  company: Saeloun Technologies
+  desc: Working on multiple projects of Ooma Inc.
+-
+  position: Engineering Manager
+  duration: Jan 2020 - April 2021
+  company: Continental Automotive Components India Pvt Ltd
+  desc: Managed the Web, QA and Design teams. Architect and web tech lead for multiple Singapore Govt enterprise projects.
+    Hands on for complex business logic implementations. Involved in process building and betterments and complete the projects successfully to pass all the UAT cycles.
+    Helped the team to deliver customer dispatch management system for Maria Bay Sands, Singapore and various other projects.
+-
+  position: Manager - Web Systems
+  duration: April 2018 - Dec 2019
+  company: Continental Automotive Components India Pvt Ltd
+  desc: Manage the Web team for multiple projects. Architect and web tech lead for multiple Singapore Govt enterprise projects, helped the team to deliver Car sharing application for Assa - Indonesia, vehicle tracking systems for Elnusa - Indonesia Hands on developing Ruby on Rails applications.
+-
+  position: Team Lead - Web Systems
+  duration: May 2016 - March 2018 
+  company: Quantum Inventions
+  desc: Manage the Web team. Architect solutions for multiple web applications related to Traffic Information Collection and Monitoring. Helping team building paking management applications and logistics applications.
+-
+  position: VP Engineering (last position)
+  duration: June 2006 - April 2016 
+  company: Kreeti Technologies Pvt Ltd
+  desc: Was managing a team of around 20 engineers and 5-6 projects. Involved in overseas (USA) client interactions, architect the solutions and coding.
+
+projects:
+-
+  name: Next-Generation ERP, A Singapore Govt Project
+  link: https://www.lta.gov.sg/content/ltagov/en/newsroom/2016/2/2/tender-awarded-to-develop-next-generation-electronic-road-pricing-system.html
+  desc: Next-Generation electronic road pricing system for Singapore. 
+-
+  name: TRIP - Console
+  link: https://www.quantuminventions.com/core-technologies/trip/
+  desc: Web console for visualization of the traffic, live traffic, incidents, cameras etc monitoring on top of Open Layers MAP.
+-
+  name: The RealReal
+  link: https://www.therealreal.com/
+  desc: It is one of the largest platforms of authenticated luxury consignments. It offers the largest selection of pre-owned and authenticated luxury items from big designers like Chanel, Hermes, Cartier, Rolex, Gucci etc.
+-
+  name: Clockwork Recruiting
+  link: https://www.clockworkrecruiting.com/
+  desc: It is an online recruitment process management platform, which can manage the entire search process for executive search firms, corporations, Venture Capital and Private Equity firms.
+-
+  name: Fotomoto
+  link: https://www.fotomoto.com/
+  desc: Fotomoto is an e-commerce system that gives everyone the power to offer print-on-demand for their images on their own site, from independent photographers to graphic designers and illustrators to large enterprises.
+-
+  name: Switchboard Sales
+  link: https://www.switchboardsales.com/
+  desc: Switchboard Sales - formerly sMarketplace - It is a B2B platform where retailers and brands can give proposals which if accepted by either of the parties become a deal and get recorded. It makes the buying and selling on i-store promotions hassle free and economic at the same time
+-
+  name: Social Kapture
+  link: https://www.socialkapture.com/
+  desc: Building dashboard application which used to sync social and ad analytics from Facebook, Instagram, Google and provide and curated user interface for the clients of Social Kapture.
+-
+  name: TMS Labsource
+  link: https://www.toxmanagement.com/
+  desc: It is a HIPAA complaint laboratory management system providing multi tenant solutions to multiple clients.
+-
+  name: HipChip
+  link: https://www.hipchip.com/
+  desc: A gifting solution for near and dear ones.
 ---
-<div class="w-100">
-  I am a Ruby on Rails architect having more than 14+ years experience handling different kind of complex, hybrid to small startup applications.
+<div id="about-me" class="w-100">
+  I am a Ruby on Rails architect having more than 14+ years experience handling different kind of <small>(API only, monolith, legacy, cutting edge, with webpack, w/o webpack)</small> complex, hybrid to small startup applications.
 
   <h3>EXPERIENCES</h3>
-  <strong>Consultant - (Sept 2021 - Present) - Multiple Clients</strong>
-  <p>
-    Working on multiple projects as Consultant
-  </p>
+  {% for exp in page.experiences %}
+    <p class="work-exp">
+      <strong>{{exp.position}} - ({{exp.duration}}) - {{exp.company}}</strong>
+      {{exp.desc}}
+    </p>
+  {% endfor %}
 
-  <strong>Lead Software Developer (April 2021 - Aug 2021) - Saeloun Technologies</strong>
-  <br/>
-  Working on multiple projects of Ooma Inc
-  
-  <br/>
-  <br/>
-  <strong>Engineering Manager (Jan 2020 - April 2021) - Continental Automotive Components India Pvt Ltd</strong><br/>
-  Managed the Web, QA and Design teams. Architect and web tech lead for multiple Singapore Govt enterprise projects.
-  Hands on for complex business logic implementations. Involved in process building and betterments and complete the projects successfully to pass all the UAT cycles.
-  Helped the team to deliver customer dispatch management system for Maria Bay Sands, Singapore and various other projects.
-  
-  <br/>
-  <br/>
-  <strong>Manager - Web Systems (April 2018 - Dec 2019) - Continental Automotive Components India Pvt Ltd</strong><br/>
-  Manage the Web team for multiple projects. Architect and web tech lead for multiple Singapore Govt enterprise projects, helped the team to deliver Car sharing application for Assa - Indonesia, vehicle tracking systems for Elnusa - Indonesia Hands on developing Ruby on Rails applications.
-  
-  <br/>
-  <br/>
-  <strong>Team Lead - Web Systems (May 2016 - March 2018) - Quantum Inventions</strong>
-  <br/>
-  Manage the Web team. Architect solutions for multiple web applications related to Traffic Information Collection and Monitoring. Helping team building paking management applications and logistics applications.
-  
-  <br/>
-  <br/>
-  <strong>VP Engineering (last position) (June 2006 - April 2016) - Kreeti Technologies Pvt Ltd</strong>
-  <br/>
-  Was managing a team of around 20 engineers and 5-6 projects. Involved in overseas (USA) client interactions, architect the solutions and coding.
-  <br/>
-  <br/>
+  <h3>PROJECTS I HAVE WORKED ON <small>(and there are many more...)</small></h3>
+  {% for project in page.projects %}
+    <p class="work-exp"></p>
+      <a href="{{project.link}}" target="_blank">
+        <img src="assets/images/external_link.png" class="external-link">
+        {{project.name}}
+      </a><br>
+      {{project.desc}}
+    </p>
+  {% endfor %}
 
-  <h3>I KNOW</h3>
-  Ruby, Ruby on Rails, RSpec, Javascript & jQuery, PostgreSQL, MySQL, Oracle (with Rails ORM), HTML5, SCSS, CSS, React, AWS
+  <h3>PROFICIENCIES <small>(and still learning...)</small></h3>
+  <section class="skills-section section">
+    <div class="skillset">
+      {% for skill in page.skills %}
+        <div class="item">
+          <span class="level-title">{{skill.name}}</span>
+          <div class="level-bar">
+            <div class="level-bar-inner" style="width: {{skill.percentage}}%;">
+            </div>
+          </div><!--//level-bar-->
+        </div><!--//item-->
+      {% endfor %}
+    </div>
+  </section>
 
-  <h3>I AM LEARNING</h3>
-  React, Golang, AWS
+  <h3>INTERESTS</h3>
+  Currently trying to give more learning focus on Golang, Node.js, Typescript and AWS. Along with, brushing up my skills on React, ES5/ES6. 
 
-  <h3>PROJECTS I HAVE WORKED ON</h3>
-  <a href="https://www.lta.gov.sg/content/ltagov/en/newsroom/2016/2/2/tender-awarded-to-develop-next-generation-electronic-road-pricing-system.html" target="_blank">Next-Generation ERP, Singapore</a>
-  <br />
-  <br />
-  <a href="https://www.therealreal.com/" target="_blank">The RealReal</a> -
-  It is one of the largest platforms of authenticated luxury consignments. It offers the largest selection of pre-owned and authenticated luxury items from big designers like Chanel, Hermes, Cartier, Rolex, Gucci etc.
-  <br />
-  <br />
-  Social Kapture - Building dashboard application which used to sync social and ad analytics from Facebook, Instagram, Google and provide and curated user interface for the clients of Social Kapture.
-  <br />
-  <br />
-  
-  Clockwork Recruiting - It is an online recruitment process management platform, which can manage the entire search process for executive search firms, corporations, Venture Capital and Private Equity firms.
-  <br />
-  <br />
-  Fotomoto - Fotomoto is an e-commerce system that gives everyone the power to offer print-on-demand for their images on their own site, from independent photographers to graphic designers and illustrators to large enterprises.
-  <br />
-  <br />
-  Switchboard Sales - formerly sMarketplace - It is a B2B platform where retailers and brands can give proposals which if accepted by either of the parties become a deal and get recorded. It makes the buying and selling on i-store promotions hassle free and economic at the same time
-  <br />
-  <br />
-  TMS Labsource - It is a HIPAA complaint laboratory management system providing multi tenant solutions to multiple clients.
-  <br />
-  <br />
-  HipChip - A gifting solution for near and dear ones.
+  <h3>Contact</h3>
+  Feel free to contact me in <a href="https://www.linkedin.com/in/skarmakar" target="_blank">Linkedin</a> or mail me at <a href="mailto:skarmakar.personal@gmail.com">skarmakar.personal@gmail.com</a>
 </div>
+<br/>

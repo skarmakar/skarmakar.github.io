@@ -14,8 +14,8 @@ discus-identifier:  XXX
 # Author settings
 author:
   name: Santanu Karmakar
-  bio: Ruby On Rails, React Consultant @skarmakar
-  picture: assets/images/profile.jpg 
+  bio: Ruby On Rails, React Consultant
+  picture: assets/images/profile.png 
   github: skarmakar # github username
   twitter: santanutt # twitter username
   linkedin: skarmakar # linkedin username
