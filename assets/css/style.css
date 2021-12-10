@@ -202,8 +202,10 @@ pre{font-size: 14px; max-width: 90vw; overflow: auto;}
 
 /* custom style for about me page*/
 
-#about-me {
-  color: #545E6C;
+.profile-about .social-links a{
+  display: inline-block;
+  padding: 0 5px;
+  margin-top: 5px;
 }
 
 #about-me h3 {

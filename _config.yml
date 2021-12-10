@@ -16,11 +16,25 @@ author:
   name: Santanu Karmakar
   bio: Ruby On Rails, React Consultant
   picture: assets/images/profile.png 
-  github: skarmakar # github username
-  twitter: santanutt # twitter username
-  linkedin: skarmakar # linkedin username
   email: skarmakar.personal@email.com # email adress
 
+socials:
+-
+  type: Linkedin
+  name: skarmakar
+  url: https://linkedin.com/in/skarmakar
+  icon: linkedin.svg
+-
+  type: Github
+  name: skarmakar
+  url: https://github.com/skarmakar
+  icon: github.svg
+
+-
+  type: Twitter
+  name: santanutt
+  url: https://twitter.com/santanutt
+  icon: twitter.svg
 
 # URL settings
 url: "https://skarmakar.github.io" # Domain Name of host. [username].github.io for github pages
