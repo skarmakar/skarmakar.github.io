@@ -7,8 +7,7 @@ permalink: /ruby-on-rails-activestorage-add-s3-bucket-prefix/
 categories: Ruby on Rails
 tags: [ruby-on-rails, activestorage]
 ---
-In one of our projects, we needed to create multiple application specific folders within a Amazon S3 bucket. Yes, definitely we could have used
-separate buckets for separate application, but, different projects have different need :)
+In one of our projects, we needed to create multiple application-specific folders within an Amazon S3 bucket. Yes, we could have used separate buckets for separate applications, but, different projects have different needs :)
 
 [This is a demo application](https://github.com/skarmakar/rails5_activestorage_demo) to enable `activestorage` in a rails 5 api-only application, and enable/disable object key prefix, ie, having folders in the same bucket rather than uploading all the assets to the root bucket.
 
