@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Catamaran:400,500,600,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
 :root {
     --bg-color: #fafafa;
     --bg-hover-color: #ececec;
@@ -22,6 +22,7 @@ body{
   color: var(--primary-font-color);
   margin: 0;
   padding: 5px;
+  letter-spacing: 1px;
 }
 .container{
   display: flex; 
@@ -69,7 +70,7 @@ body{
   background: var(--bg-hover-color);
 }
 
-.post-list .post-title{width: 80%; color: var(--primary-font-color); font-weight: 600;}
+.post-list .post-title{width: 80%; color: var(--primary-font-color); font-weight: 600; font-size: 20px;}
 .post-list .post-date{width: 20%; text-align: right;}
 
 .post-header{
@@ -219,6 +220,7 @@ pre{font-size: 14px; max-width: 90vw; overflow: auto;}
   display: block;
   color: #333;
   font-weight: 650;
+  font-size: 20px;
 }
 
 #about-me .skills-section {
