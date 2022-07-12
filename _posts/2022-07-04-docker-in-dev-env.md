@@ -1,5 +1,5 @@
 ---
-title: "Different way to use docker in development environment"
+title: "A different way to use docker in the development environment"
 date: 2022-07-04T00:00:00+00:00
 author: Santanu Karmakar
 layout: post
