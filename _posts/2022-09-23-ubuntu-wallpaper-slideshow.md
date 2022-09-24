@@ -187,7 +187,7 @@ Copy this ruby code in a file named `ubuntu_slideshow.rb`:
     UbuntuSlideshow.new(ARGV.first).perform 
   else
     puts "
-      Please provide an unplash url ar argument, example:
+      Please provide an unplash url as argument. Example:
       ruby /path/to/ubuntu_slideshow.rb 'https://unsplash.com/t/nature'
     "
   end
